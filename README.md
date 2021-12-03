@@ -10,7 +10,7 @@ cached credential helper for gcr
     cd docker-credential-gcloud-cached
     ln -s "$(pwd)/docker-credential-gcloud-cached" /usr/local/bin/docker-credential-gcloud-cached
 
-test:
+sanity check:
 
     $ echo "eu.gcr.io" | docker-credential-gcloud-cached get
     {
@@ -18,7 +18,11 @@ test:
       "Username": "_dcgcloud_token"
     }
 
-example `$HOME/.docker/config`:
+easy setup:
+
+    $ docker-credential-gcloud-cached __cached_setup
+
+example `$HOME/.docker/config.config`:
 
     {
       "credHelpers": {
