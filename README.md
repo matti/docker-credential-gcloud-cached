@@ -6,7 +6,7 @@ faster builds
 
 cached credential helper for gcr
 
-    git clone github.com/matti/docker-credential-gcloud-cached
+    git clone https://github.com/matti/docker-credential-gcloud-cached.git
     cd docker-credential-gcloud-cached
     ln -s "$(pwd)/docker-credential-gcloud-cached" /usr/local/bin/docker-credential-gcloud-cached
 
